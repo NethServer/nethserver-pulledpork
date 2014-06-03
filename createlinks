@@ -31,3 +31,11 @@ $event = "nethserver-pulledpork-update";
 templates2events("/etc/snort/pulledpork.conf", $event);
 event_actions($event, 'initialize-default-databases' => '00');
 
+#--------------------------------------------------
+# actions for nethserver-pulledpork-save event
+#--------------------------------------------------
+
+$event = "nethserver-pulledpork-save";
+
+templates2events("/etc/snort/pulledpork.conf", $event);
+event_actions($event, 'nethserver-pulledpork-apply' => '30');
