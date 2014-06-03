@@ -1,0 +1,14 @@
+# What is the base ruleset that you want to use, please uncomment to use
+# and see the README.RULESETS for a description of the options.  
+# Note that setting this value will disable all ET rulesets if you are 
+# Running such rulesets
+
+{
+    my $policy = $pulledpork{'Policy'} || 'connectivity';
+    if ($policy eq 'expert') {
+        $OUT .= "#ips_policy DISABLED - EXPERT MODE\n";
+    } else {
+        $OUT .= "ips_policy=$policy\n";
+    }
+}
+

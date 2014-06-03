@@ -1,0 +1,35 @@
+# Config file for pulledpork
+# Be sure to read through the entire configuration file
+# If you specify any of these items on the command line, it WILL take 
+# precedence over any value that you specify in this file!
+
+#######
+#######  The below section defines what your oinkcode is (required for 
+#######  VRT rules), defines a temp path (must be writable) and also 
+#######  defines what version of rules that you are getting (for your 
+#######  snort version and subscription etc...)
+####### 
+
+# You can specify one or as many rule_urls as you like, they 
+# must appear as http://what.site.com/|rulesfile.tar.gz|1234567.  You can specify
+# each on an individual line, or you can specify them in a , separated list
+# i.e. rule_url=http://x.y.z/|a.tar.gz|123,http://z.y.z/|b.tar.gz|456
+# note that the url, rule file, and oinkcode itself are separated by a pipe |
+# i.e. url|tarball|123456789, 
+#rule_url=https://www.snort.org/reg-rules/|snortrules-snapshot.tar.gz|8c068e30dfdc8cde61889171080fc891348800a0
+# NEW Community ruleset:
+rule_url=https://s3.amazonaws.com/snort-org/www/rules/community/|community-rules.tar.gz|Community
+# NEW For IP Blacklisting! Note the format is urltofile|IPBLACKLIST|<oinkcode>
+# This format MUST be followed to let pulledpork know that this is a blacklist
+# rule_url=http://labs.snort.org/feeds/ip-filter.blf|IPBLACKLIST|open
+# URL for rule documentation! (slow to process)
+#rule_url=https://www.snort.org/reg-rules/|opensource.gz|<oinkcode>
+rule_url=https://rules.emergingthreatspro.com/|emerging.rules.tar.gz|open
+# THE FOLLOWING URL is for etpro downloads, note the tarball name change!
+# and the et oinkcode requirement!
+#rule_url=https://rules.emergingthreatspro.com/|etpro.rules.tar.gz|<et oinkcode>
+# NOTE above that the VRT snortrules-snapshot does not contain the version
+# portion of the tarball name, this is because PP now automatically populates
+# this value for you, if, however you put the version information in, PP will
+# NOT populate this value but will use your value!
+

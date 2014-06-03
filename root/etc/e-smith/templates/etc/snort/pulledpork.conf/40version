@@ -1,0 +1,4 @@
+{
+    $version=`rpm --query --qf "%{VERSION}" pulledpork`;
+    $OUT .= "version=$version\n";
+}
