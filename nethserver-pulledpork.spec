@@ -1,7 +1,7 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
 Version: 0.0.1
-Release: 1
+Release: 1%{?dist}
 License: GPL
 Group: Networking/Daemons
 Source0: %{name}-%{version}.tar.gz
