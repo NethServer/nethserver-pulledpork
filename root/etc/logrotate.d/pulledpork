@@ -1,0 +1,4 @@
+/var/log/sid_changes.log {
+    notifempty
+    missingok
+}
