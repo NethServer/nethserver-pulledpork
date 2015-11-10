@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 License: GPL
 Group: Networking/Daemons
@@ -45,6 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) /etc/snort/rules/snort.rules
 
 %changelog
+* Tue Nov 10 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.2-1
+- pulledpork config: update url for community download - Bug #3301 [NethServer]
+- Rotate /var/log/sid_changes.log - Enhancement #3273 [NethServer]
+
 * Tue May 19 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1
 - pulledpork drop policy should reflect snort policy - Enhancement #3162 [NethServer]
 
