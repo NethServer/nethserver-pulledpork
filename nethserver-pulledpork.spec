@@ -9,6 +9,7 @@ URL: %{url_prefix}/%{name}
 
 Requires: pulledpork
 Requires: nethserver-base
+Requires: perl-LWP-Protocol-https
 BuildRequires: nethserver-devtools
 
 %description
