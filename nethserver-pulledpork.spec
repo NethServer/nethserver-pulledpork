@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 1.0.2
+Version: 1.1.0
 Release: 1%{?dist}
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -34,6 +34,9 @@ echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
+- First NS7 release
+
 * Tue Nov 10 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.2-1
 - pulledpork config: update url for community download - Bug #3301 [NethServer]
 - Rotate /var/log/sid_changes.log - Enhancement #3273 [NethServer]
