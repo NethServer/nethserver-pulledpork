@@ -16,15 +16,17 @@
 # i.e. rule_url=http://x.y.z/|a.tar.gz|123,http://z.y.z/|b.tar.gz|456
 # note that the url, rule file, and oinkcode itself are separated by a pipe |
 # i.e. url|tarball|123456789, 
-#rule_url=https://www.snort.org/reg-rules/|snortrules-snapshot.tar.gz|8c068e30dfdc8cde61889171080fc891348800a0
+# rule_url=https://www.snort.org/reg-rules/|snortrules-snapshot.tar.gz|<oinkcode>
 # NEW Community ruleset:
 rule_url=https://snort.org/downloads/community/|community-rules.tar.gz|Community
 # NEW For IP Blacklisting! Note the format is urltofile|IPBLACKLIST|<oinkcode>
 # This format MUST be followed to let pulledpork know that this is a blacklist
-# rule_url=http://labs.snort.org/feeds/ip-filter.blf|IPBLACKLIST|open
+rule_url=http://talosintelligence.com/feeds/ip-filter.blf|IPBLACKLIST|open
 # URL for rule documentation! (slow to process)
-#rule_url=https://www.snort.org/reg-rules/|opensource.gz|<oinkcode>
-rule_url=https://rules.emergingthreatspro.com/|emerging.rules.tar.gz|open
+# rule_url=https://www.snort.org/reg-rules/|opensource.gz|<oinkcode>
+# THE FOLLOWING URL is for emergingthreats downloads, note the tarball name change!
+# and open-nogpl, to avoid conflicts.
+rule_url=https://rules.emergingthreats.net/|emerging.rules.tar.gz|open-nogpl
 # THE FOLLOWING URL is for etpro downloads, note the tarball name change!
 # and the et oinkcode requirement!
 #rule_url=https://rules.emergingthreatspro.com/|etpro.rules.tar.gz|<et oinkcode>
@@ -32,4 +34,3 @@ rule_url=https://rules.emergingthreatspro.com/|emerging.rules.tar.gz|open
 # portion of the tarball name, this is because PP now automatically populates
 # this value for you, if, however you put the version information in, PP will
 # NOT populate this value but will use your value!
-

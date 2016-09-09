@@ -34,7 +34,7 @@ temp_path=/tmp
 # rules? (this value has changed as of 0.4.0, previously we copied 
 # all of the rules, now we are creating a single large rules file
 # but still keeping a separate file for your so_rules!
-rule_path=/etc/snort/rules/snort.rules
+rule_path=/etc/suricata/rules/suricata.rules
 
 # What path you want the .rules files to be written to, this is UNIQUE
 # from the rule_path and cannot be used in conjunction, this is to be used with the
@@ -152,7 +152,7 @@ snort_control=/usr/local/bin/snort_control
 # This value MUST contain all 4 minor version
 # numbers. ET rules are now also dependant on this, verify supported ET versions
 # prior to simply throwing rubbish in this variable kthx!
-# snort_version=2.9.0.0
+snort_version=suricata
 
 # Here you can specify what rule modification files to run automatically.
 # simply uncomment and specify the apt path.
