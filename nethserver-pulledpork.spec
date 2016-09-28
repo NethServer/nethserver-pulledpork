@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 1.1.0
+Version: 2.0.0
 Release: 1%{?dist}
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -34,6 +34,9 @@ echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Wed Sep 28 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.0.0-1
+- Replace Snort with Suricata - NethServer/dev#5104
+
 * Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
 - First NS7 release
 
