@@ -1,1 +1,1 @@
-30 2 * * * root /usr/bin/pulledpork.pl -c /etc/snort/pulledpork.conf -l >/dev/null
+30 2 * * * root /usr/bin/pulledpork -c /etc/snort/pulledpork.conf -l >/dev/null
