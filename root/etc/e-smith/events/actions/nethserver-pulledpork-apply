@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/pulledpork.pl -c /etc/snort/pulledpork.conf -P
+/usr/bin/pulledpork -c /etc/pulledpork/pulledpork.conf -P
