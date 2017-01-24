@@ -22,16 +22,17 @@ NethServer pulledpork configuration
 perl createlinks
 
 %install
-rm -rf $RPM_BUILD_ROOT
-(cd root ; find . -depth -print | cpio -dump $RPM_BUILD_ROOT)
-%{genfilelist} $RPM_BUILD_ROOT > %{name}-%{version}-%{release}-filelist
+rm -rf %{buildroot}
+(cd root; find . -depth -print | cpio -dump %{buildroot})
+%{genfilelist} %{buildroot} > %{name}-%{version}-%{release}-filelist
+mkdir -p %{buildroot}/etc/suricata/rules/iplists
 echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 
 %files -f %{name}-%{version}-%{release}-filelist
 %defattr(-,root,root)
-%config(noreplace) /etc/snort/rules/snort.rules
 %doc COPYING
 %dir %{_nseventsdir}/%{name}-update
+%dir /etc/suricata/rules/iplists
 
 %changelog
 * Wed Sep 28 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.0.0-1
