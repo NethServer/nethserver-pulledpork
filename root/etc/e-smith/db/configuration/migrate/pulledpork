@@ -1,0 +1,5 @@
+# rules configuration is now stored in suricata
+{
+  my $pp = $DB->get('pulledpork') || return ''; # no key means that migration isn't needed
+  $pp->delete;
+}
