@@ -1,8 +1,0 @@
-{
-    my $policy = $pulledpork{'Policy'} || 'connectivity';
-    if ($policy eq 'expert') {
-        $OUT .= "#EXPERT MODE\n";
-    } else {
-        $OUT .= "pcre:$policy-ips\ drop\n";
-    }
-}

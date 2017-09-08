@@ -72,14 +72,14 @@ sid_changelog=/var/log/sid_changes.log
 
 # What path you want the .so files to actually go to *i.e. where is it
 # defined in your snort.conf, needs a trailing slash
-sorule_path=/usr/lib/snort_dynamicrules/
+# sorule_path=/usr/lib/snort_dynamicrules/
 
 # Path to the snort binary, we need this to generate the stub files
 snort_path=/usr/sbin/snort
 
 # We need to know where your snort.conf file lives so that we can
 # generate the stub files
-config_path=/etc/suricata/snort.conf
+# config_path=/etc/suricata/snort.conf
 
 ##### Deprecated - The stubs are now  categorically written to the  single rule file!
 # sostub_path=/usr/local/etc/snort/rules/so_rules.rules
@@ -93,7 +93,7 @@ config_path=/etc/suricata/snort.conf
 # FreeBSD-7-3, FreeBSD-8-1
 # OpenBSD-4-8
 # Slackware-13-1
-distro=RHEL-6-0
+# distro=RHEL-6-0
 
 #######  This next section is optional, but probably pretty useful to you.
 #######  Please read thoroughly!
@@ -113,7 +113,7 @@ black_list=/etc/suricata/rules/iplists/default.blacklist
 IPRVersion=/etc/suricata/rules/iplists
 
 # The following option tells snort where the snort_control tool is located.
-snort_control=/usr/local/bin/snort_control
+# snort_control=/usr/local/bin/snort_control
 
 # What do you want to backup and archive?  This is a comma separated list
 # of file or directory values.  If a directory is specified, PP will recurse
@@ -159,5 +159,5 @@ snort_version=suricata
 enablesid=/etc/pulledpork/enablesid.conf
 dropsid=/etc/pulledpork/dropsid.conf
 disablesid=/etc/pulledpork/disablesid.conf
-modifysid=/usr/local/etc/snort/modifysid.conf
+modifysid=/etc/pulledpork/modifysid.conf
 
