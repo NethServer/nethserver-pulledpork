@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/usr/bin/pulledpork -c /etc/pulledpork/pulledpork.conf -P -n -E
+/usr/bin/pulledpork -c /etc/pulledpork/pulledpork.conf -P -n -E -k
 /bin/pkill -USR2 -f suricata
 exit 0
