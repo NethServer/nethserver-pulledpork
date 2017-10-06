@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 2.0.1
+Version: 2.1.0
 Release: 1%{?dist}
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -35,6 +35,9 @@ echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 %dir /etc/suricata/rules/iplists
 
 %changelog
+* Fri Oct 06 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.0-1
+- EveBox - NethServer/dev#5346
+
 * Wed Jan 25 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.0.1-1
 - Daily cron email about pulledpork.pl - Bug NethServer/dev#5191
 - Pulledpork: wrong configuration - Bug NethServer/dev#5199
