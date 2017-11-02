@@ -152,7 +152,7 @@ IPRVersion=/etc/suricata/rules/iplists
 # This value MUST contain all 4 minor version
 # numbers. ET rules are now also dependant on this, verify supported ET versions
 # prior to simply throwing rubbish in this variable kthx!
-snort_version=suricata
+snort_version=suricata-1.3-enhanced
 
 # Here you can specify what rule modification files to run automatically.
 # simply uncomment and specify the apt path.
