@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 2.1.1
+Version: 2.1.2
 Release: 1%{?dist}
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -35,6 +35,9 @@ echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 %dir /etc/suricata/rules/iplists
 
 %changelog
+* Fri Jan 12 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.2-1
+- pulledpork.conf: use rules optimized for suricata 4.0 - Nethserver/nethserver-pulledpork#7
+
 * Wed Nov 08 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.1-1
 - Suricata rules download error - Bug NethServer/dev#5370
 
