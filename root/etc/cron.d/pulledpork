@@ -1,1 +1,0 @@
-30 2 * * * root sleep `expr $RANDOM \% 7200 + 120`; /usr/bin/pulledpork -c /etc/pulledpork/pulledpork.conf -k -g -l >/dev/null; /etc/e-smith/events/actions/nethserver-pulledpork-apply >/dev/null

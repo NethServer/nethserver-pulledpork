@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# download rules (-g option)
+/usr/bin/pulledpork -c /etc/pulledpork/pulledpork.conf -k -g -l >/dev/null
+
+# process rules (enable/disable) and reload into suricata
+/etc/e-smith/events/actions/nethserver-pulledpork-apply >/dev/null
