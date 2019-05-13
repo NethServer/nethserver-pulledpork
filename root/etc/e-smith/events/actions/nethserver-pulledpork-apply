@@ -27,5 +27,5 @@ if [ -f /tmp/emerging.rules.tar.gz ]; then
 else
     /usr/bin/pulledpork -c /etc/pulledpork/pulledpork.conf -P -E -k
 fi
-/bin/pkill -USR2 -f suricata
+systemctl reload suricata
 exit 0
