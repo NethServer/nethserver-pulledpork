@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 2.1.4
+Version: 2.1.5
 Release: 1%{?dist}
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -35,6 +35,9 @@ echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 %dir /etc/suricata/rules/iplists
 
 %changelog
+* Thu Nov 21 2019 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.5-1
+- Avoid email from cron if suricata is not running (#10)
+
 * Tue May 28 2019 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.4-1
 - IPS Cockpit UI - NethServer/dev#5756
 
