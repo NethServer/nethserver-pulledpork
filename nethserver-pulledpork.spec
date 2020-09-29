@@ -7,7 +7,8 @@ Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 URL: %{url_prefix}/%{name}
 
-Requires: pulledpork
+Requires: pulledpork7
+Obsoletes: pulledpork
 Requires: nethserver-base
 Requires: perl-LWP-Protocol-https
 BuildRequires: nethserver-devtools
