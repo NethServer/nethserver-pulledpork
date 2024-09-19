@@ -1,6 +1,6 @@
 Summary: NethServer pulledpork configuration
 Name: nethserver-pulledpork
-Version: 2.1.7
+Version: 2.1.8
 Release: 1%{?dist}
 License: GPL
 Source0: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ echo "%doc COPYING" >> %{name}-%{version}-%{release}-filelist
 %dir /etc/suricata/rules/iplists
 
 %changelog
+* Thu Sep 19 2024 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.8-1
+- PulledPork: Issues Downloading ET Rules - Bug NethServer/dev#7029
+
 * Tue Sep 29 2020 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.1.7-1
 - IPS: new pulledpork version from EPEL - Bug NethServer/dev#6287
 
